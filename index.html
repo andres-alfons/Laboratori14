@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">Mi Sitio wed</div>
+            <div id="nav-toggle">☰</div>
+
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a>
+                <ul>
+                    <li><a href="#">Mision</a></li>
+                    <li><a href="#">Vision</a></li>
+                </ul>
+                </li>
+                <li>
+                    <a href="#">Servicions</a>
+                    <ul>
+                        <li><a href="#">Diseño de Wed</a></li>
+                        <li><a href="#">Desarollo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>BIENVENIDOS A MI PAGINA</h1>
+    <h2>contenidoo de ejemplo</h2>
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navbar = document.getElementById('navbar');
+
+        navToggle.addEventListener('click', ()=>{
+            navbar.classList.toggle('nav-open');
+        } )
+    </script>
+</body>
+</html>
